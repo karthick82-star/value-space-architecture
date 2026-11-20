@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Value Space Architecture</title>
+<meta name="description" content="Selected residential, commercial and interior projects by Value Space Architecture.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/main.js" defer></script>
+<script src="js/projects.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" data-site-header></header>
+
+<main id="main">
+<section class="page-hero">
+  <div class="container stack">
+    <p class="eyebrow">Projects</p>
+    <h1>Selected work.</h1>
+    <p class="lead">Residential, commercial and interior projects, each designed around its site and the people who use it.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="filters" role="group" aria-label="Filter projects by category">
+      <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="residential" aria-pressed="false">Residential</button>
+      <button class="filter" type="button" data-filter="commercial" aria-pressed="false">Commercial</button>
+      <button class="filter" type="button" data-filter="interior" aria-pressed="false">Interior</button>
+      <span class="filters__count" id="filter-count" aria-live="polite"></span>
+    </div>
+    <div class="projects-grid" data-projects="all"></div>
+  </div>
+</section>
+
+<section data-site-cta></section>
+</main>
+
+<footer class="site-footer" data-site-footer></footer>
+
+</body>
+</html>

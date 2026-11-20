@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Value Space Architecture</title>
+<meta name="description" content="Start a project with Value Space Architecture. Send us a few details about your plans.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" data-site-header></header>
+
+<main id="main">
+<section class="page-hero">
+  <div class="container stack">
+    <p class="eyebrow">Contact</p>
+    <h1>Let’s build something extraordinary.</h1>
+    <p class="lead">Share a few details about your project and we’ll get back to you.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container contact-grid">
+    <div class="contact-info" data-reveal>
+      <div class="contact-line">
+        <span>Email</span>
+        <a href="mailto:inquiries@vg-atelier.com" data-site-email>inquiries@vg-atelier.com</a>
+      </div>
+      <div class="contact-line">
+        <span>Helpful to include</span>
+        <ul class="ticks">
+          <li>Project type and location</li>
+          <li>Plot size or approximate area</li>
+          <li>Preferred timeline and budget range</li>
+        </ul>
+      </div>
+      <img src="images/zenith-3.webp" width="600" height="450" loading="lazy"
+           alt="Reflecting pool and lounge terrace of a modern villa">
+    </div>
+
+    <div data-reveal>
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+          <span class="field-error" id="name-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+          <span class="field-error" id="email-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone <small>(optional)</small></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-error">
+          <span class="field-error" id="phone-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="type">Project type</label>
+          <select id="type" name="type" aria-describedby="type-error">
+            <option value="">Select…</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Interior</option>
+            <option>Other</option>
+          </select>
+          <span class="field-error" id="type-error" role="alert"></span>
+        </div>
+        <div class="field field--full">
+          <label for="message">Your project</label>
+          <textarea id="message" name="message" placeholder="Location, size and timeline, if known" aria-describedby="message-error"></textarea>
+          <span class="field-error" id="message-error" role="alert"></span>
+        </div>
+        <div class="form__actions">
+          <button class="btn" type="submit">Send Enquiry</button>
+          <span class="form__note" role="status"></span>
+        </div>
+      </form>
+
+      <div class="form-success" id="form-success" tabindex="-1" hidden>
+        <h2>Thank you.</h2>
+        <p data-success-text></p>
+        <button class="btn btn--outline" type="button" id="form-reset">Send another</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer" data-site-footer></footer>
+
+</body>
+</html>
