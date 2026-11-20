@@ -2273,3 +2273,43 @@ body.home-page .site-header.is-scrolled .header-cta {
 [hidden] {
   display: none !important;
 }
+
+/* ---------- 10. Contact Map Section ---------- */
+.contact-location-text {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-top: 0.35rem;
+  line-height: 1.35;
+}
+
+.map-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.04);
+  overflow: hidden;
+}
+
+.map-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: clamp(1.25rem, 2.5vw, 1.85rem) clamp(1.5rem, 3vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+  background: #fafafa;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: clamp(350px, 45vh, 480px);
+  background: #f0f0f0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
