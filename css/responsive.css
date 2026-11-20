@@ -87,19 +87,47 @@
   .form { grid-template-columns: 1fr; }
   .form-success { padding: 1.75rem; }
   .btn { padding: 1rem 1.6rem; }
+
+  /* Map card mobile alignment */
+  .map-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.25rem;
+  }
+  .map-card__header .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .map-container {
+    height: 320px;
+  }
 }
 
 /* ---------- Small mobile ≤ 480px ---------- */
 @media (max-width: 480px) {
-  .brand img { height: 32px; }
-  .brand__name { font-size: 0.78rem; letter-spacing: 0.03em; }
+  :root { --header-h: 66px; --pad: 1rem; }
+  
+  .brand { gap: 0.6rem; max-width: calc(100% - 50px); }
+  .brand img { height: 32px; width: auto; }
+  .brand__name { font-size: 0.76rem; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .brand__tag { display: none; }
-  .header-inner { gap: 0.5rem; }
+  .header-inner { gap: 0.5rem; padding-inline: 1rem; }
   .nav-toggle { width: 38px; height: 38px; }
 
-  .floating-whatsapp { bottom: 1.25rem; right: 1.25rem; }
-  .floating-whatsapp__btn { width: 50px; height: 50px; }
-  .floating-whatsapp__popup { width: 285px; right: 0; bottom: 62px; }
+  .page-hero { padding-top: calc(var(--header-h) + 1.25rem); padding-bottom: 2.25rem; }
+  .page-hero h1 { font-size: clamp(1.85rem, 7vw, 2.35rem); line-height: 1.2; word-break: break-word; }
+  
+  .contact-info .contact-line { margin-top: 1.35rem; }
+  .contact-location-text { font-size: 1.05rem; }
+
+  .map-card__header h2 { font-size: 1.35rem; }
+  .map-container { height: 280px; }
+
+  .floating-whatsapp { bottom: 1rem; right: 1rem; }
+  .floating-whatsapp__btn { width: 48px; height: 48px; }
+  .floating-whatsapp__popup { width: calc(100vw - 2rem); max-width: 310px; right: 0; bottom: 58px; }
 
   .hero__actions { width: 100%; flex-direction: column; }
   .hero__actions .btn { width: 100%; }
